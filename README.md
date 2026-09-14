@@ -21,13 +21,11 @@ It was originally created for Age of Empires II HD, but the overlay itself is ga
 
 ## What it does
 
-Upon starting the tool, you will have to choose the build order you want to follow for the current game from the dropdown menu. Build orders are not provided, you will have to make your own .txt documents with your custom build orders.
+Upon starting the tool, you will have to choose the build order you want to follow for the current game from the dropdown menu. Build orders are not provided, you will have to make your own .txt documents with your custom build orders.  
+It then creates an overlay window positioned above the game window, where your build order name will be displayed, alongside the first few steps of your build.  
+When the configured hotkey is pressed, the application advances to the next step in the build order. The current step is displayed in red, the step before is green, the ones after are grey.  
 
-It then creates an overlay window positioned above the game window, where your build order name will be displayed, alongside the first few steps of your build.
-
-When the configured hotkey is pressed, the application advances to the next step in the build order. The current step is displayed in red, the step before is green, the ones after are grey.
-
-The hotkeys are tweakable, as well as all the display settings (colors used, window position and transparency, amount of steps showed at the same time, etc.). This can be done by right-clicking the file and selecting "Edit script". Feel free to reach me out if you need any help with this part.
+The hotkeys are tweakable, as well as all the display settings (colors used, window position and transparency, amount of steps showed at the same time, etc.). This can be done by right-clicking the file and selecting "Edit script". 
 
 ## What it doesn't do
 
@@ -56,10 +54,10 @@ This need to be done in a .txt file (with Notepad for example). Originally, buil
 
 Build orders must be written as follow. There's not limit to the number of steps.
 
-Build order name
-Step 1
-Step 2
-Step 3
+Build order name  
+Step 1  
+Step 2  
+Step 3  
 ...
 
 ## Need help?
