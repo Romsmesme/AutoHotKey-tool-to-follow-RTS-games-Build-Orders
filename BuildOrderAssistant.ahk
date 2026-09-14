@@ -1,10 +1,10 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
 ; ==========================
 ; Configuration
 ; ==========================
 
-buildFolder := A_ScriptDir "\Builds"
+buildFolder := A_ScriptDir
 
 
 ; ==========================
@@ -39,7 +39,7 @@ selectGui.Show()
 
 
 ; ==========================
-; Chargement du build choisi
+; Selected Build Loading
 ; ==========================
 
 LoadSelectedBuild(*)
@@ -84,20 +84,20 @@ CreateOverlay()
     myGui.BackColor := "202020"
 
     myGui.SetFont("s14 Bold", "Segoe UI")
-    titleText := myGui.AddText("c4FC3F7 w500 h40", "")
+    titleText := myGui.AddText("c4FC3F7 w800 h40", "")
 
     myGui.SetFont("s14", "Segoe UI")
-    prevText := myGui.AddText("c66FF66 w500", "")
+    prevText := myGui.AddText("c66FF66 w800", "")
 
     myGui.SetFont("s16 Bold", "Segoe UI")
-    currText := myGui.AddText("cFF5555 w500", "")
+    currText := myGui.AddText("cFF5555 w800", "")
 
     myGui.SetFont("s14", "Segoe UI")
-    next1Text := myGui.AddText("cFFFFFF w500", "")
-    next2Text := myGui.AddText("cFFFFFF w500", "")
-    next3Text := myGui.AddText("cFFFFFF w500", "")
+    next1Text := myGui.AddText("cFFFFFF w800", "")
+    next2Text := myGui.AddText("cFFFFFF w800", "")
+    next3Text := myGui.AddText("cFFFFFF w800", "")
 
-    myGui.Show("x10 y250 w320 h300")
+    myGui.Show("x0 y880 w600 h300")
 
     WinSetExStyle("+0x20", "ahk_id " myGui.Hwnd)
     WinSetTransColor("202020 255", "ahk_id " myGui.Hwnd)
